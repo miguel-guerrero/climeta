@@ -44,6 +44,8 @@ The `.toml` file can be generated manually or through a provided web interface.
 
 ## TOML file format description
 
+The TOML file can be generated through a web interface and downloaded. Check-out [miguel-guerrero.github.io/climeta](https://miguel-guerrero.github.io/climeta)
+
 The TOML file contains a `program` section with general information to be included in the help dump, plus a per-argument section (as many arguments as needed:
 
 Here is a brief description of the fields. Note that most fields are strings:
