@@ -1,6 +1,6 @@
 # Climeta (CLI - meta generator)
 
-A Command Line Interpreter (CLI) meta generator for several languates
+A Command Line Interpreter (CLI) meta generator for several languages
 
 This tool is a Command Line Arguments (CLI) parser generator that uses a single point of definition (a `.toml` file) to generate multiple collaterals. It supports generating code for several languages, as of today:
 
