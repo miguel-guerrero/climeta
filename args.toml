@@ -1,0 +1,26 @@
+[program]
+name = "Example program"
+description = "The description of the program"
+epilog = "Goes at the end"
+
+[[arguments]]
+name = "input"
+type = "string"
+required = true
+help = "Input TOML file"
+
+[[arguments]]
+name = "--output"
+short = "-o"
+type = "string"
+required = false
+help = "Output file"
+default = "args.toml"
+
+[[arguments]]
+name = "--lang"
+short = "-l"
+type = "string"
+required = true
+help = "Language for the generated code"
+choices = "python,bash"

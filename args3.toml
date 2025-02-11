@@ -1,0 +1,13 @@
+[program]
+name = "example"
+description = "example descr"
+epilog = "epilog"
+
+[[arguments]]
+name = "--lang"
+short = "-l"
+type = "string"
+required = "true"
+choices = "python,bash"
+help = "help"
+

@@ -1,0 +1,42 @@
+[program]
+name = "example"
+description = "Example CLI Parser using TOML"
+epilog = "Example: sample0 input.txt --output output.txt --verbose -i 1 -f 2.0"
+
+[[arguments]]
+name = "input"
+type = "string"
+help = "input file path"
+
+[[arguments]]
+name = "--output"
+type = "string"
+help = "output file path"
+
+[[arguments]]
+name = "--verbose"
+short = "-v"
+type = "flag"
+help = "enable verbose mode"
+
+[[arguments]]
+name = "--disable"
+dest = "enable"
+type = "flag"
+default = "true"
+help = "disable something"
+
+[[arguments]]
+name = "--int"
+short = "-i"
+type = "int"
+dest = "int_"
+help = "just an integer number"
+
+[[arguments]]
+name = "--float"
+short = "-f"
+default = "7.0"
+type = "float"
+dest = "float_"
+help = "just a float number"

@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, button {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.wide-input {
+    width: 100%;
+    max-width: 600px;
+}
+
+#argumentsContainer input.name-option,
+#argumentsContainer input.default-option,
+#argumentsContainer input.dest-option,
+#argumentsContainer input.metavar-option {
+    width: 80%;
+    max-width: 400px;
+}
+
+#argumentsContainer input.short-option {
+    width: 20%;
+    max-width: 100px;
+}
+
+button {
+    width: auto;
+    cursor: pointer;
+}
+
+#argumentsContainer .argument {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#programInfo {
+    margin-bottom: 20px;        /* Space below the section */
+    padding: 20px;              /* Add padding inside the block */
+    border: 1px solid #ccc;     /* Light border around the block */
+    border-radius: 8px;         /* Rounded corners */
+    background-color: #f5f5f5;  /* Slightly darker background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Light shadow for depth */
+}
+
+.type {
+    position: relative;
+    display: inline-block;
+}
+.type select {
+    width: 100px;
+}
+
+.multiple {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+}
+
+.required {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+}
+
+.tooltip .wider-text {
+  width: 400px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 400px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -150px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.error {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+}
+
+.hidden {
+    display: none;
+}
+
+.choices-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.choices-select {
+    width: 200px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.choices-input {
+    width: 150px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.choices-remove-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.choices-remove-btn:hover {
+    background-color: #d32f2f;
+}
+
+.choices-add-btn {
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.choices-row {
+    flex-basis: 100%;
+    margin-top: 5px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #ffffff;
+    box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.1);  /* Light shadow for depth */
+}
+
+.choices-row .choices-container {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.choices-row label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f44336;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: background-color 0.2s;
+}
+
+.close-btn:hover {
+    background-color: #d32f2f;
+}
+
+.close-btn .tooltip-text {
+    right: -10px;  /* Adjust the right position instead of using left */
+    left: auto;    /* Override the default left positioning */
+    margin-left: 0;  /* Remove the default margin */
+    width: 120px;    /* Make it narrower since we only need "Remove argument" */
+}

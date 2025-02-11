@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLI Arguments to TOML Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CLI Arguments to TOML Generator</h1>
+
+    <form id="argumentForm">
+        <div id="programInfo">
+          <h3>Program Info</h3>
+          <label for="programName">Program Name:</label>
+          <input type="text" id="programName" required><br>
+
+          <label for="programDescription">Description:</label>
+          <input type="text" id="programDescription" class="wide-input" required><br>
+
+          <label for="programEpilog">Epilog (optional):</label>
+          <input type="text" id="programEpilog" class="wide-input"><br>
+        </div>
+
+        <h3>Arguments</h3>
+        <div id="argumentsContainer">
+            <!-- Arguments will be dynamically added here -->
+        </div>
+        <button type="button" onclick="addArgument()">Add Argument</button><br><br>
+
+        <button type="submit">Generate TOML</button>
+        <a id="downloadLink" class="hidden">Download TOML</a>
+    </form>
+
+    <input type="file" id="importTOML" accept=".toml" onclick="resetTOMLFileName()" onchange="importTOMLFile()">
+
+    <script src="index.js"></script>
+</body>
+</html>
