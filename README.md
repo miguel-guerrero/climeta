@@ -10,7 +10,7 @@ This tool is a Command Line Arguments (CLI) parser generator that uses a single 
 - C++ (using [cxxopts](https://github.com/jarro2783/cxxopts) library)
 - JavaScript (for `node`, using [command-line-args](https://www.npmjs.com/package/command-line-args) and [command-line-usage](https://www.npmjs.com/package/command-line-usage) packages)
 
-The intent is to keep adding support anything that could be useful over time from a common definition to allow: 
+The intent is to keep adding support for anything that could be useful over time from a common definition to allow: 
 - Moving from one language to another without having to redo the CLI parsing (e.g move from `bash` to `python` is something that happens to me frequently).
 - Simplify the generation of repetitive code with consistent level of quality.
 - In some cases, augment the capanilities of the underlaying used libraries to provide a consistent set of features across languages (for example show default values on help message even if the underlaying library doesn't support it).
